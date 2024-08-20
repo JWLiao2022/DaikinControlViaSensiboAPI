@@ -37,7 +37,7 @@ class TemperatureControl(QThread):
         for i in range(totalNumbersOfMeasurements):
             totalTime = self.timeForT1 + self.timeForT2
             newTimeForT1 = self.timeForT1 - (self.timeStepMins* 60 * i)
-            newTimeForT2 = totalTime - newTimeForT1
+            newTimeForT2 = self.timeForT2
             if (newTimeForT1 >= newTimeForT2):
                 #Update the status
                 self.signalStatusUpdate.emit("Start the measurement with {} C for {} mins and {} C for {} mins.\n".format(self.T1, round(newTimeForT1/60, 2), self.T2, round(newTimeForT2/60, 2)))

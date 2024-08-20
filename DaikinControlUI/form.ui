@@ -33,9 +33,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>410</y>
+     <y>430</y>
      <width>771</width>
-     <height>181</height>
+     <height>161</height>
     </rect>
    </property>
    <property name="title">
@@ -47,7 +47,7 @@
       <x>10</x>
       <y>30</y>
       <width>741</width>
-      <height>141</height>
+      <height>121</height>
      </rect>
     </property>
    </widget>
@@ -132,19 +132,19 @@
      <x>10</x>
      <y>180</y>
      <width>231</width>
-     <height>231</height>
+     <height>241</height>
     </rect>
    </property>
    <property name="title">
     <string>Test parameters</string>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>180</y>
       <width>211</width>
-      <height>41</height>
+      <height>71</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -164,13 +164,13 @@
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>30</y>
       <width>211</width>
-      <height>151</height>
+      <height>168</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">

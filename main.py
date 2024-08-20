@@ -13,6 +13,7 @@ import json
 
 import pyqtgraph as pg
 import pyqtgraph.exporters
+from pyqtgraph.Qt import QtGui
 
 from time import time
 
@@ -114,6 +115,7 @@ class Widget(QWidget):
         self.ui.pushButton_StopMeasurement.setEnabled(False)
 
     def plotInitialser(self):
+        
         self.ui.graphicsViewTemperaturePlot.setTitle("Time dependent temperature variation.")
         self.ui.graphicsViewTemperaturePlot.showAxis('right')
         self.ui.graphicsViewTemperaturePlot.showAxis('top')
@@ -124,6 +126,7 @@ class Widget(QWidget):
         self.ui.graphicsViewTemperaturePlot.getAxis('top').enableAutoSIPrefix(enable=False)
         self.ui.graphicsViewTemperaturePlot.getAxis('top').setStyle(tickLength=0, showValues=False)
         self.ui.graphicsViewTemperaturePlot.showGrid(True, True)
+        self.ui.graphicsViewTemperaturePlot.setYRange(23.4, 26.2, padding=0.05)
     
     @Slot()
     def qtSlot_StatusReport(self, txtStatusUpdate):
